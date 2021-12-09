@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { DashboardModule } from './views/dashboard/dashboard.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MovieModule } from './views/movie/movie.module';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,

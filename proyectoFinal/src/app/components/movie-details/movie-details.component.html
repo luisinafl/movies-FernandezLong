@@ -1,1 +1,22 @@
 <p>movie-details works!</p>
+<!-- {{movies}} -->
+<!-- <div class="col" *ngFor="let movie of movies">
+  <div class="home__movie">
+{{movie.details}}
+      <span class="home__movie__name">
+        {{ movie.name }}
+      </span>
+
+  </div>
+</div> -->
+
+<div class="col" *ngIf="movies">
+  <div class="home__movie">
+    <!-- <a routerLink="/movie/{{ movie.id }}"> -->
+{{movies[0].name}}
+      <span class="home__movie__name">
+        <!-- {{ movies.name }} -->
+      </span>
+
+  </div>
+</div>
