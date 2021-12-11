@@ -12,4 +12,14 @@ body {
 
 * {
   font-family: "Montserrat", sans-serif;
+  font-size:14px;
+}
+
+
+.card, .form-control{
+  background: none;
+  border: 1px solid #363636;
+  &:focus{
+    background:none
+  }
 }

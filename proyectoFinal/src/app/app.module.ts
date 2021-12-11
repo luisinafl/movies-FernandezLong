@@ -8,17 +8,29 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MovieModule } from './views/movie/movie.module';
 import { CartComponent } from './components/cart/cart.component';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { LoginRegisterComponent } from './views/login-register/login-register.component';
+
 @NgModule({
   declarations: [
     AppComponent,
+    LoginComponent,
     CartComponent,
+    RegisterComponent,
+    LoginRegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     DashboardModule,
     NgbModule,
-    MovieModule
+    MovieModule,
+    ReactiveFormsModule,
+    FormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
