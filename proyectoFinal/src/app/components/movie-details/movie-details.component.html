@@ -1,6 +1,37 @@
-{{ movie.name }}
-{{ movie.actors }}
-{{ movie.details }}
-{{ movie.genre }}
-{{ movie.releaseYear }}
-{{ movie.price }}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col-md-8 col-lg-10 p-2">
+      <p class="details">
+        {{ movie.details }}
+      </p>
+
+      <button class="btn btn-outline-light btn-sm" [routerLink]="['/dashboard']" > volver</button>
+
+    </div>
+    <div class="col-12 col-md-4 col-lg-2 p-2">
+      <div>
+        <span class="data">Actores:</span>
+        <span class="extrainfo">
+          {{ movie.actors }}
+        </span>
+      </div>
+      <div>
+        <span class="data">Género</span>
+
+        <span class="extrainfo">
+          {{ movie.genre }}
+        </span>
+      </div>
+      <div>
+        <span class="data">Año:</span>
+        <span class="extrainfo">
+          {{ movie.releaseYear }}
+        </span>
+      </div>
+      <div class="price text-success">
+        ${{ movie.price }}
+
+      </div>
+    </div>
+  </div>
+</div>

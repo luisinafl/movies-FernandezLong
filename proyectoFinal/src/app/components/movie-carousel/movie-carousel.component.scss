@@ -1,0 +1,21 @@
+slide {
+    max-height: 60vh;
+
+  .carousel-caption {
+    background: linear-gradient(to top, #181818d9, #4848480a);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 60%;
+    h3 {
+      position: absolute;
+      bottom: 20%;
+      left: 5%;
+      margin-bottom: 0;
+      font-size: 4.5rem;
+      font-weight: 400;
+    }
+  }
+}
