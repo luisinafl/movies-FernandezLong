@@ -2,8 +2,7 @@
   <div class="row">
     <div class="col" *ngFor="let movie of movies">
       <div class="home__movie">
-        <!-- <a routerLink="/movie/{{ movie.id }}"> -->
-        <a routerLink="/movie/{{ movie.id }}">
+        <a [routerLink]="['/movie', movie.id]">
           <img src="{{ movie.image }}" alt="" class="home__movie__poster" />
           <span class="home__movie__name">
             {{ movie.name }}
