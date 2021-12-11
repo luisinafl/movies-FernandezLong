@@ -1,8 +1,7 @@
-<p>movie works!</p>
-<app-movie-carousel></app-movie-carousel>
-<app-movie-details></app-movie-details>
-<ng-template *ngIf="movies">
-  {{ movies }}
-  <!-- {{movies.id}} -->
-</ng-template>
+<div class="container-fluid">
+
+
+  <app-movie-carousel></app-movie-carousel>
+</div>
+  <app-movie-details></app-movie-details>
 <button class="btn btn-secondary" [routerLink]="['/dashboard']" > volver</button>

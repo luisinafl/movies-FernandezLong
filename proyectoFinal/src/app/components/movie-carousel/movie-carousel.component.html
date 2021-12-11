@@ -1,16 +1,33 @@
-<!-- <p>movie-carousel works!</p>
 <div class="row">
   <div class="col-12">
     <carousel [isAnimated]="true" [noPause]="true" [showIndicators]="false">
       <slide>
-        <img src="assets/images/nature/1.jpg" alt="first slide" style="display: block; width: 100%;">
+        <img
+          src="{{ movie.detailImages.url }}"
+          style="display: block; width: 100%"
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h3>{{ movie.name }}</h3>
+        </div>
       </slide>
       <slide>
-        <img src="assets/images/nature/2.jpg" alt="second slide" style="display: block; width: 100%;">
+        <img
+          src="{{ movie.detailImages.url2 }}"
+          style="display: block; width: 100%"
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h3>{{ movie.name }}</h3>
+        </div>
       </slide>
       <slide>
-        <img src="assets/images/nature/3.jpg" alt="third slide" style="display: block; width: 100%;">
+        <img
+          src="{{ movie.detailImages.url3 }}"
+          style="display: block; width: 100%"
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h3>{{ movie.name }}</h3>
+        </div>
       </slide>
     </carousel>
   </div>
-</div> -->
+</div>
