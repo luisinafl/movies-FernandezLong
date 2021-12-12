@@ -13,6 +13,7 @@ import { RouterModule } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginRegisterComponent } from './views/login-register/login-register.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { LoginRegisterComponent } from './views/login-register/login-register.co
     MovieModule,
     ReactiveFormsModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

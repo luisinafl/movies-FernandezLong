@@ -5,7 +5,9 @@
         {{ movie.details }}
       </p>
 
-      <button class="btn btn-outline-light btn-sm" [routerLink]="['/dashboard']" > volver</button>
+      <button class="btn btn-icon" [routerLink]="['/dashboard']" >
+        <fa-icon  [icon]="faChevronLeft"></fa-icon>
+      </button>
 
     </div>
     <div class="col-12 col-md-4 col-lg-2 p-2">

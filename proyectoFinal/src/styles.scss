@@ -23,3 +23,21 @@ body {
     background:none
   }
 }
+
+.btn-icon{
+  border-radius: 2rem;
+  height: 35px;
+  width: 35px;
+  background: #0f131a;
+  box-shadow:  1px 2px 5px #000000, -2px -2px 5px #2b2e36;;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fa-icon{
+    color: #8b949e;
+    font-size: 12px;
+  }
+  &:hover, &:active, &:focus{
+    box-shadow: none;
+  }
+}
