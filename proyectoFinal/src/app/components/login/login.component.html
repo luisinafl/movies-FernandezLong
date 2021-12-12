@@ -1,57 +1,53 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" #formDir="ngForm">
+  <div
+    class="cross-validation"
+    [class.cross-validation-error]="loginForm.errors?.['identityRevealed'] && (loginForm.touched || loginForm.dirty)"
+  >
+    <div class="form-group">
+      <label class="form-label mb-1" for="email">Mail</label>
+      <input
+        class="form-control"
+        id="email"
+        type="text"
+        formControlName="email"
+        required
+      />
 
-        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" #formDir="ngForm">
-          <div
-            class="cross-validation"
-            [class.cross-validation-error]="loginForm.errors?.['identityRevealed'] && (loginForm.touched || loginForm.dirty)"
-          >
-            <div class="form-group">
-              <label class="form-label mb-1" for="email">Mail</label>
-              <input
-                class="form-control"
-                id="email"
-                type="text"
-                formControlName="email"
-                required
-              />
+      <div
+        *ngIf="email.invalid && (email.dirty || email.touched)"
+        class="text-danger pt-1"
+      >
+        Ingrese su email
+      </div>
 
-              <div
-                *ngIf="email.invalid && (email.dirty || email.touched)"
-                class="text-danger pt-1"
-              >
-                Ingrese su email
-              </div>
+      <label class="form-label my-1" for="password">Contraseña</label>
+      <input
+        class="form-control"
+        id="password"
+        type="password"
+        formControlName="password"
+        required
+      />
 
-              <label class="form-label my-1" for="password">Password</label>
-              <input
-                class="form-control"
-                id="password"
-                type="password"
-                formControlName="password"
-                required
-              />
-
-              <div
-                *ngIf="password.invalid && (password.dirty || password.touched)"
-                class="text-danger pt-1"
-              >
-                Ingrese su contraseña
-              </div>
-              <div class="card-footer pb-0 m-0">
-                <button
-                  class="btn btn-primary mr-2"
-                  type="submit"
-                  [disabled]="!loginForm.valid"
-                  [routerLink]="['/dashboard']"
-                >
-                  Enviar
-                </button>
-                <button
-                  class="btn-outline-primary btn"
-                  [routerLink]="['/register']"
-                >
-                  Registrarse
-                </button>
-              </div>
-            </div>
-          </div>
-        </form>
+      <div
+        *ngIf="password.invalid && (password.dirty || password.touched)"
+        class="text-danger pt-1"
+      >
+        Ingrese su contraseña
+      </div>
+      <div class="card-footer pb-0 m-0">
+        <button
+          class="btn btn-primary mr-2"
+          type="submit"
+          [disabled]="!loginForm.valid"
+          [routerLink]="['/dashboard']"
+        >
+          Enviar
+        </button>
+        <button class="btn-outline-primary btn" [routerLink]="['/register']">
+          Registrarse
+        </button>
+      </div>
+    </div>
+  </div>
+</form>
