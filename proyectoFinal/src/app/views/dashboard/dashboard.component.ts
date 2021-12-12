@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
-import { Observable, pipe } from 'rxjs';
 import { Movie, movies } from 'src/app/models/movies.define';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
 
 import { selectedMovie } from 'src/app/models/selectedMovie.define';
 @Component({
@@ -10,6 +10,8 @@ import { selectedMovie } from 'src/app/models/selectedMovie.define';
   styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent implements OnInit {
+  cartIcon = faShoppingCart;
+
   movies = movies;
   showNavigationArrows = false;
   showNavigationIndicators = false;

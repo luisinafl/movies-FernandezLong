@@ -2,20 +2,33 @@
   &__movie {
     overflow: hidden;
     position: relative;
-    border-radius: 0.3rem;
+    border-radius: 23px;
+    background: #0f131a;
+    box-shadow: 4px 4px 10px #000000, -4px -4px 10px #2b2e36;
+    &:hover {
+      box-shadow: none;
+    }
     &__poster {
       max-width: 100%;
+      filter: brightness(0.9);
     }
     &__name {
       position: absolute;
       left: 0;
       right: 0;
       bottom: 0;
-      background: linear-gradient(to top, #181818d9, #4848480a);
-      padding: 1rem;
-      color: white;
-      font-size: 1.2rem;
-      font-weight: 600;
+      background: linear-gradient(
+        to top,
+        #0c0c0cd9 0%,
+        #0c0c0c7a 60%,
+        #48484800 100%
+      );
+      padding: 2.5rem 1rem 1rem;
+      color: #bec2c7;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 }

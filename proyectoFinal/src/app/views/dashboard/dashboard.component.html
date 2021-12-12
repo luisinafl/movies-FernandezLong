@@ -1,4 +1,4 @@
-<div class="container home">
+<div class="container-fluid mt-3 home">
   <div class="row">
     <div class="col" *ngFor="let movie of movies">
       <div class="home__movie">
@@ -7,10 +7,12 @@
           <span class="home__movie__name">
             {{ movie.name }}
             <button
-              class="btn btn-primary"
+              class="btn  btn-icon"
               (click)="addToCart(movie.name, movie.price)"
             >
-              Agregar al carrito
+            <fa-icon [icon]="cartIcon"></fa-icon>
+
+              <i class="fas fa-shopping-cart"></i>
             </button>
           </span>
         </a>
