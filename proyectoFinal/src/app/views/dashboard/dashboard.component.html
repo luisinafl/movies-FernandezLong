@@ -4,19 +4,20 @@
       <div class="home__movie">
         <a [routerLink]="['/movie', movie.id]">
           <img src="{{ movie.image }}" alt="" class="home__movie__poster" />
-          <span class="home__movie__name">
-            {{ movie.name }}
-            <button
-              class="btn  btn-icon"
-              (click)="addToCart(movie.name, movie.price)"
-            >
-            <fa-icon [icon]="cartIcon"></fa-icon>
-
-              <i class="fas fa-shopping-cart"></i>
-            </button>
-          </span>
         </a>
+        <span class="home__movie__name">
+          {{ movie.name }}
+          <button
+            class="btn  btn-icon"
+            (click)="addToCart(movie.name, movie.price)"
+          >
+          <fa-icon [icon]="cartIcon"></fa-icon>
+
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+        </span>
       </div>
     </div>
   </div>
 </div>
+<app-cart [selectedMovie]="selectedMovie"></app-cart>
