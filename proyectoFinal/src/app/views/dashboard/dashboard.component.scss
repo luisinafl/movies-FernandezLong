@@ -5,12 +5,15 @@
     border-radius: 23px;
     background: #0f131a;
     box-shadow: 4px 4px 10px #000000, -4px -4px 10px #2b2e36;
+    height: 40vh;
     &:hover {
       box-shadow: none;
     }
     &__poster {
-      max-width: 100%;
+      min-width: 100%;
+      max-width: auto;
       filter: brightness(0.9);
+      height:100%;
     }
     &__name {
       position: absolute;
