@@ -1,7 +1,7 @@
 table.mat-table.cdk-table.cart-table {
   margin: 3vh 3vw 0;
   border-radius: 30px;
-  width: calc(100vw - 6vw - 48px);
+  width: calc(100vw - 3vw - 48px);
   background: #161c24;
   .mat-header-cell,
   .mat-cell {
@@ -10,6 +10,6 @@ table.mat-table.cdk-table.cart-table {
     font-weight: 400;
   }
   .mat-header-cell {
-    font-size: 14px;
+    color: #717981;
   }
 }

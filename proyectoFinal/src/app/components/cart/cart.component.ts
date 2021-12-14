@@ -18,10 +18,7 @@ export class CartComponent implements OnInit {
   constructor() {
     this.product = {};
   }
-  getTotalCost() {
-    console.log("dmf")
 
-  }
   ngOnInit(): void {}
 
 

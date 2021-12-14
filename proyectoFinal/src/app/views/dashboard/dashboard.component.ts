@@ -14,15 +14,14 @@ export class DashboardComponent implements OnInit {
   cartIcon = faShoppingCart;
 
   movies = movies;
-  showNavigationArrows = false;
-  showNavigationIndicators = false;
+
   moviesList: Movie[];
   amount: number;
   selectedMovie: selectedMovie[];
 
   constructor() {
     this.selectedMovie = [];
-    this.amount = 0;
+    this.amount = 1;
     this.moviesList = movies;
     // this.product = MovieService
   }
